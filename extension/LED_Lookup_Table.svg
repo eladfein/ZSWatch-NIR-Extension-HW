@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 260" width="520" height="260">
+<rect width="520" height="260" fill="#f5f5e8"/>
+
+<!-- Title -->
+<text x="14" y="18" font-family="monospace" font-size="11" font-weight="bold" fill="#0000aa">LED LOOKUP TABLE  (DEFAULT: GPIO1=LO, GPIO2=LO)</text>
+
+<!-- Outer border -->
+<rect x="10" y="24" width="500" height="224" fill="none" stroke="#0000aa" stroke-width="1.5"/>
+
+<!-- Column header row -->
+<rect x="10" y="24" width="500" height="20" fill="none" stroke="#0000aa" stroke-width="1"/>
+
+<!-- Column dividers (vertical) -->
+<line x1="60"  y1="24" x2="60"  y2="248" stroke="#0000aa" stroke-width="0.8"/>
+<line x1="140" y1="24" x2="140" y2="248" stroke="#0000aa" stroke-width="0.8"/>
+<line x1="310" y1="24" x2="310" y2="248" stroke="#0000aa" stroke-width="0.8"/>
+<line x1="400" y1="24" x2="400" y2="248" stroke="#0000aa" stroke-width="0.8"/>
+
+<!-- Header text -->
+<text x="14"  y="38" font-family="monospace" font-size="9.5" font-weight="bold" fill="#0000aa">LED CH</text>
+<text x="64"  y="38" font-family="monospace" font-size="9.5" font-weight="bold" fill="#0000aa">COLOR</text>
+<text x="144" y="38" font-family="monospace" font-size="9.5" font-weight="bold" fill="#0000aa">COMPONENT</text>
+<text x="314" y="38" font-family="monospace" font-size="9.5" font-weight="bold" fill="#0000aa">GPIO1</text>
+<text x="404" y="38" font-family="monospace" font-size="9.5" font-weight="bold" fill="#0000aa">GPIO2</text>
+
+<!-- Row dividers and data rows -->
+<!-- Row heights: 32px each, starting at y=44 -->
+
+<!-- ROW 1: LED1 / Green 530 / SFH K_GREEN / LO / -- -->
+<line x1="10" y1="44" x2="510" y2="44" stroke="#0000aa" stroke-width="0.6"/>
+<text x="14"  y="57" font-family="monospace" font-size="9.5" fill="#cc0000" font-weight="bold">LED1</text>
+<text x="64"  y="57" font-family="monospace" font-size="9.5" fill="#007700">G  530nm</text>
+<text x="144" y="57" font-family="monospace" font-size="9.5" fill="#333">LED501 SFH7016 K_GREEN</text>
+<text x="314" y="57" font-family="monospace" font-size="9.5" fill="#0000aa" font-weight="bold">LO ★</text>
+<text x="404" y="57" font-family="monospace" font-size="9.5" fill="#888">--</text>
+
+<!-- ROW 2: LED1 / NIR 1050 / ROHM CSL0901 / HI / -- -->
+<line x1="10" y1="64" x2="510" y2="64" stroke="#0000aa" stroke-width="0.6"/>
+<text x="14"  y="77" font-family="monospace" font-size="9.5" fill="#cc0000" font-weight="bold">LED1</text>
+<text x="64"  y="77" font-family="monospace" font-size="9.5" fill="#880088">NIR 1050nm</text>
+<text x="144" y="77" font-family="monospace" font-size="9.5" fill="#333">LED503 CSL0901S10T1</text>
+<text x="314" y="77" font-family="monospace" font-size="9.5" fill="#cc6600" font-weight="bold">HI</text>
+<text x="404" y="77" font-family="monospace" font-size="9.5" fill="#888">--</text>
+
+<!-- ROW 3: LED2 / IR 940 / SFH K_IR / LO / -- -->
+<line x1="10" y1="84" x2="510" y2="84" stroke="#0000aa" stroke-width="0.6"/>
+<text x="14"  y="97" font-family="monospace" font-size="9.5" fill="#cc0000" font-weight="bold">LED2</text>
+<text x="64"  y="97" font-family="monospace" font-size="9.5" fill="#005599">IR  940nm</text>
+<text x="144" y="97" font-family="monospace" font-size="9.5" fill="#333">LED501 SFH7016 K_IR</text>
+<text x="314" y="97" font-family="monospace" font-size="9.5" fill="#0000aa" font-weight="bold">LO ★</text>
+<text x="404" y="97" font-family="monospace" font-size="9.5" fill="#888">--</text>
+
+<!-- ROW 4: LED2 / IR 850 / VSMY / HI / -- -->
+<line x1="10" y1="104" x2="510" y2="104" stroke="#0000aa" stroke-width="0.6"/>
+<text x="14"  y="117" font-family="monospace" font-size="9.5" fill="#cc0000" font-weight="bold">LED2</text>
+<text x="64"  y="117" font-family="monospace" font-size="9.5" fill="#005599">IR  850nm</text>
+<text x="144" y="117" font-family="monospace" font-size="9.5" fill="#333">LED502 VSMY5850X01</text>
+<text x="314" y="117" font-family="monospace" font-size="9.5" fill="#cc6600" font-weight="bold">HI</text>
+<text x="404" y="117" font-family="monospace" font-size="9.5" fill="#888">--</text>
+
+<!-- ROW 5: LED3 / Red 655 / SFH K_RED / -- / LO -->
+<line x1="10" y1="124" x2="510" y2="124" stroke="#0000aa" stroke-width="0.6"/>
+<text x="14"  y="137" font-family="monospace" font-size="9.5" fill="#cc0000" font-weight="bold">LED3</text>
+<text x="64"  y="137" font-family="monospace" font-size="9.5" fill="#cc0000">R  655nm</text>
+<text x="144" y="137" font-family="monospace" font-size="9.5" fill="#333">LED501 SFH7016 K_RED</text>
+<text x="314" y="137" font-family="monospace" font-size="9.5" fill="#888">--</text>
+<text x="404" y="137" font-family="monospace" font-size="9.5" fill="#0000aa" font-weight="bold">LO ★</text>
+
+<!-- ROW 6: LED3 / IR 980 / NPD / -- / HI -->
+<line x1="10" y1="144" x2="510" y2="144" stroke="#0000aa" stroke-width="0.6"/>
+<text x="14"  y="157" font-family="monospace" font-size="9.5" fill="#cc0000" font-weight="bold">LED3</text>
+<text x="64"  y="157" font-family="monospace" font-size="9.5" fill="#005599">IR  980nm</text>
+<text x="144" y="157" font-family="monospace" font-size="9.5" fill="#333">LED504 NPD3535I7</text>
+<text x="314" y="157" font-family="monospace" font-size="9.5" fill="#888">--</text>
+<text x="404" y="157" font-family="monospace" font-size="9.5" fill="#cc6600" font-weight="bold">HI</text>
+
+<!-- Bottom divider before notes -->
+<line x1="10" y1="164" x2="510" y2="164" stroke="#0000aa" stroke-width="1"/>
+
+<!-- Notes section -->
+<text x="14" y="178" font-family="monospace" font-size="8.5" fill="#333">★ DEFAULT (GPIO pull-downs → LO at power-up = standard PPG frame)</text>
+<text x="14" y="192" font-family="monospace" font-size="8.5" fill="#333">CB1=GPIO1 → SW1(LED1) + SW2(LED2) simultaneously</text>
+<text x="14" y="206" font-family="monospace" font-size="8.5" fill="#333">CB2=GPIO2 → SW3(LED3) independently</text>
+<text x="14" y="220" font-family="monospace" font-size="8.5" fill="#333">MUX: LO=NC=SFH7016  ·  HI=NO=new NIR LED</text>
+<text x="14" y="234" font-family="monospace" font-size="8.5" fill="#880000">ROHM (LED3): LED1_PA ≤ 0x80 (100mA IFP max) when GPIO1=HI</text>
+<text x="14" y="248" font-family="monospace" font-size="8.5" fill="#333">Others: LED_PA up to 0xFF (200mA, MAX86141 DAC limit)</text>
+
+</svg>

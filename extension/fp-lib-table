@@ -1,4 +1,5 @@
 (fp_lib_table
   (version 7)
   (lib (name "extension")(type "KiCad")(uri "C:/dev/Diabetes-HW/ZSWatch-NIR-Extension-HW/extension")(options "")(descr ""))
+  (lib (name "ZSWatch")(type "KiCad")(uri "${KIPRJMOD}/library/Footprints/ZSWatch.pretty")(options "")(descr ""))
 )
