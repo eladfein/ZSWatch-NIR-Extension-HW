@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "MRD103_SENSRBRD_APPS")(type "KiCad")(uri "${KIPRJMOD}/MRD103_SENSRBRD_APPS.kicad_sym")(options "")(descr ""))
+  (lib (name "MRD103_SENSRBRD_APPS-lib")(type "Legacy")(uri "${KIPRJMOD}/MRD103_SENSRBRD_APPS-lib.lib")(options "")(descr ""))
+)
