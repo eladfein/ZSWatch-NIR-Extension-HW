@@ -3563,7 +3563,7 @@
 		)
 		(uuid "2bfe4e06-78a9-4a6b-8f4d-1415bfd65191")
 	)
-	(text_box "DESIGN NOTE:\nThe hub firmware uses\n- LED1 for Green\n- LED2 for IR\n- LED3 for red"
+	(text_box "DESIGN NOTE:\nThe hub firmware uses\n- LED1 for Green\n- LED2 for IR (Frame A)\n- LED3 for red (Frame A)"
 		(exclude_from_sim no)
 		(at 242.57 20.32 0)
 		(size 35.56 20.32)
@@ -3589,7 +3589,7 @@
 	(text_box "Layout guidelines for MAX8614x:\n- Connect all GNDs to a single ground plane and use one single via to PCB ground\n- Use different vias for all decoupling caps\n- PD_IN must be shielded by PD_GND\n- PD_GND on the layer where the MAX8614x is mounted, PG_IN under PD_GND\n- No traces over or under PD_GND. Isolate it with an additonal copper layer."
 		(exclude_from_sim no)
 		(at 106.68 13.97 0)
-		(size 71.12 33.02)
+		(size 63.5 33.02)
 		(margins 2.25 2.25 2.25 2.25)
 		(stroke
 			(width 1.5)
@@ -4049,7 +4049,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 58.42) (xy 181.61 58.42)
+			(xy 173.99 58.42) (xy 181.61 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4309,7 +4309,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 60.96) (xy 181.61 60.96)
+			(xy 173.99 60.96) (xy 181.61 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4569,6 +4569,16 @@
 	)
 	(wire
 		(pts
+			(xy 234.95 124.46) (xy 234.95 139.7)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "625d698b-e503-4257-b8c5-cbccf61c5ac2")
+	)
+	(wire
+		(pts
 			(xy 228.6 124.46) (xy 228.6 129.54)
 		)
 		(stroke
@@ -4576,6 +4586,16 @@
 			(type default)
 		)
 		(uuid "637673f7-b217-4a3f-a3be-c82cc2aa9a3f")
+	)
+	(wire
+		(pts
+			(xy 242.57 119.38) (xy 247.65 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "67c29374-c4d4-449a-9849-22b868568723")
 	)
 	(wire
 		(pts
@@ -4706,16 +4726,6 @@
 			(type default)
 		)
 		(uuid "75f1e487-b071-45f6-8058-c255174c45d0")
-	)
-	(wire
-		(pts
-			(xy 243.84 119.38) (xy 247.65 119.38)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "76830088-4b65-4b1f-922d-878b03fe022e")
 	)
 	(wire
 		(pts
@@ -5499,16 +5509,6 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 124.46) (xy 234.95 139.7)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fc56ef61-043c-4d3d-ba53-4721429e4f84")
-	)
-	(wire
-		(pts
 			(xy 198.12 83.82) (xy 200.66 83.82)
 		)
 		(stroke
@@ -5518,7 +5518,7 @@
 		(uuid "ffc62443-e930-4d9a-a5e1-6a8bc1d53da2")
 	)
 	(image
-		(at 189.23 140.97)
+		(at 191.77 142.24)
 		(scale 1.31273)
 		(uuid "34c10624-4e61-4de3-afd1-c3192d9cf585")
 		(data "/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdC"
@@ -5936,7 +5936,7 @@
 		(uuid "0d26845b-effb-43e9-b0d6-7c4206858f77")
 	)
 	(label "GPIO2"
-		(at 168.91 60.96 0)
+		(at 173.99 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5996,7 +5996,7 @@
 		(uuid "666927e7-bf1b-447c-93c9-9b96bb4e91ab")
 	)
 	(label "GPIO1"
-		(at 168.91 58.42 0)
+		(at 173.99 58.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6214,6 +6214,17 @@
 	)
 	(hierarchical_label "+1V8_HR"
 		(shape input)
+		(at 242.57 119.38 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c3fc95eb-3de6-41f7-b843-ea9b754eecad")
+	)
+	(hierarchical_label "+1V8_HR"
+		(shape input)
 		(at 218.44 36.83 0)
 		(effects
 			(font
@@ -6222,6 +6233,17 @@
 			(justify left)
 		)
 		(uuid "c51095fb-4d12-4ebe-a42a-bfb0994b8951")
+	)
+	(hierarchical_label "+1V8_HR"
+		(shape input)
+		(at 247.65 134.62 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d3b83676-576c-43ec-a1fa-08afb9a7c50d")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -7212,72 +7234,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 247.65 134.62 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2315bafc-7ef3-49f5-98ef-f78100bf03ad")
-		(property "Reference" "#PWR010"
-			(at 241.3 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 242.57 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 247.65 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 247.65 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 247.65 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "46d08f9a-20c5-444e-b13d-9318519e3a71")
-		)
-		(instances
-			(project "ZSWatch-Extension"
-				(path "/d5742f03-3b1a-42e5-a384-018bd4b919aa/c5103ceb-5325-4a84-a025-9638a412984e/82af773f-8c39-43b9-baa2-3658da6c8bb2"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 196.85 35.56 0)
 		(unit 1)
@@ -7370,7 +7326,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 220.472 125.73 90)
 			(effects
 				(font
@@ -8970,12 +8926,12 @@
 			(at 229.87 134.62 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.016 1.016)
 				)
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
 			(at 226.822 133.35 90)
 			(effects
 				(font
@@ -12351,72 +12307,6 @@
 			(project "ZSWatch-Extension"
 				(path "/d5742f03-3b1a-42e5-a384-018bd4b919aa/c5103ceb-5325-4a84-a025-9638a412984e/82af773f-8c39-43b9-baa2-3658da6c8bb2"
 					(reference "#PWR0514")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 243.84 119.38 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f5fb7440-5322-4613-9168-f6a1ddcf18e9")
-		(property "Reference" "#PWR09"
-			(at 243.84 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 243.84 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 243.84 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 243.84 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 243.84 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9cb91bc9-2199-4d09-adf4-90e7242a6a67")
-		)
-		(instances
-			(project "ZSWatch-Extension"
-				(path "/d5742f03-3b1a-42e5-a384-018bd4b919aa/c5103ceb-5325-4a84-a025-9638a412984e/82af773f-8c39-43b9-baa2-3658da6c8bb2"
-					(reference "#PWR09")
 					(unit 1)
 				)
 			)
